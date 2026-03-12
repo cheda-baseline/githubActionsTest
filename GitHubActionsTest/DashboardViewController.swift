@@ -75,7 +75,7 @@ self.users=data
         }
       }
 
-        private func showError(_ error:UserValidationError){
+                private func showError(_ error:UserValidationError){
     var msg:String
         switch error{
 case .emptyFirstName:msg="First name required"
