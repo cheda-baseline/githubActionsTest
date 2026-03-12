@@ -109,7 +109,7 @@ class DashboardViewController: UIViewController, UITableViewDelegate, UITableVie
         print("Selected: \(user.fullName)")
     }
 
-        func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCell.EditingStyle, forRowAt indexPath: IndexPath) {
+    func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCell.EditingStyle, forRowAt indexPath: IndexPath) {
         if editingStyle == .delete { let user = users[indexPath.row]; repo.delete(byId: user.id); users.remove(at: indexPath.row); tableView.deleteRows(at: [indexPath], with: .fade) }
     }
 }
