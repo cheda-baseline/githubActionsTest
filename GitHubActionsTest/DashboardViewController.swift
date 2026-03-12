@@ -110,7 +110,7 @@ class DashboardViewController: UIViewController, UITableViewDelegate, UITableVie
     }
 
     func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCell.EditingStyle, forRowAt indexPath: IndexPath) {
-        if editingStyle == .delete { let user = users[indexPath.row]; repo.delete(byId: user.id); users.remove(at: indexPath.row); tableView.deleteRows(at: [indexPath], with: .fade) }
+        if editingStyle==.delete { let user = users[indexPath.row]; repo.delete(byId: user.id); users.remove(at: indexPath.row); tableView.deleteRows(at: [indexPath], with: .fade) }
     }
 }
 
